@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
+import { handleSignInSubmit } from './SignInSubmit';
 
 function SignIn() {
     return (
@@ -11,7 +11,7 @@ function SignIn() {
             p: 2, 
             margin: '5% auto 0'
         }}>
-            <Box component="form">
+            <Box component="form" onSubmit={handleSignInSubmit}>
                 <Grid 
                     container 
                     direction="column" 
@@ -26,7 +26,8 @@ function SignIn() {
                         <TextField
                             required
                             id="outlined-required"
-                            label="ID"
+                            label="id"
+                            name='id'
                             autoFocus
                             sx={{width:'400px'}}
                         />
@@ -35,7 +36,8 @@ function SignIn() {
                         <TextField
                             required
                             id="outlined-required"
-                            label="PW"
+                            label="pw"
+                            name='pw'
                             sx={{width:'400px', padding:'0 0 10px 0'}}
                         />
                     </Grid>
