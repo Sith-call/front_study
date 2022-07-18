@@ -1,12 +1,8 @@
 import React from 'react';
-import { SignIn } from './signIn/signIn';
-import { Route, Routes } from 'react-router-dom';
-import { Signup } from './signup/signup';
+import AppRouter from "./AppRouter";
 
 function App() {
-  return (
-    <Signup />
-  );
+  return <AppRouter />
 }
 
 export default App;

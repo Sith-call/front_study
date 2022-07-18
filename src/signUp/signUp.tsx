@@ -4,8 +4,9 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { handleSignUpSubmit } from './signUpSubmit';
+import { Link } from 'react-router-dom';
 
-function Signup() {
+function SignUp() {
     return (
         <Box component="main" sx={{ 
                 p: 2, 
@@ -54,9 +55,9 @@ function Signup() {
                             <Button variant="contained" type="submit">Sign Up</Button>
                         </Grid>
                         <Grid item>
-                            {/* <Link to="/"> */}
+                            <Link to="/">
                                 Already have an account? Sign in
-                            {/* </Link> */}
+                            </Link>
                         </Grid>
                     </Grid>
                 </Box>
@@ -64,4 +65,4 @@ function Signup() {
     );
 }
 
-export {Signup};
+export {SignUp};

@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { handleSignInSubmit } from './signInSubmit';
+import { Link } from 'react-router-dom';
 
 function SignIn() {
     return (
@@ -45,9 +46,9 @@ function SignIn() {
                         <Button variant="contained" type="submit">Sign In</Button>
                     </Grid>
                     <Grid item>
-                        {/* <Link to="/"> */}
-                            Don't have an account? Sign Up"
-                        {/* </Link> */}
+                        <Link to="/signup">
+                            Don't have an account? Sign Up
+                        </Link>
                     </Grid>
                 </Grid>
             </Box>
