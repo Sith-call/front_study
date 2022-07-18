@@ -1,6 +1,9 @@
 
 function Board() {
-    return ;
+    return 
+    <div>
+        TEST
+    </div>;
 }
 
 export {Board};

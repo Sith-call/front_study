@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { handleSignInSubmit } from './SignInSubmit';
+import { handleSignInSubmit } from './signInSubmit';
 
 function SignIn() {
     return (
@@ -37,18 +37,18 @@ function SignIn() {
                             required
                             id="outlined-required"
                             label="pw"
-                            name='pw'
+                            name='password'
                             sx={{width:'400px', padding:'0 0 10px 0'}}
                         />
                     </Grid>
                     <Grid item>
                         <Button variant="contained" type="submit">Sign In</Button>
                     </Grid>
-                    {/* <Grid item>
-                        <Link to="/">
+                    <Grid item>
+                        {/* <Link to="/"> */}
                             Don't have an account? Sign Up"
-                        </Link>
-                    </Grid> */}
+                        {/* </Link> */}
+                    </Grid>
                 </Grid>
             </Box>
     </Box>
