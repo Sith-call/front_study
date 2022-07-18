@@ -37,7 +37,7 @@ function SignIn() {
                         <TextField
                             required
                             id="outlined-required"
-                            label="pw"
+                            label="password"
                             name='password'
                             sx={{width:'400px', padding:'0 0 10px 0'}}
                         />
