@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Board } from "./board/board";
 import { SignIn } from "./signIn/signIn";
